@@ -42,6 +42,8 @@
   .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; margin-bottom: 14px; }
   .card h3 { margin: 0 0 6px; font-size: 1.05rem; }
   .card p { margin: 0 0 10px; color: var(--muted); font-size: 16px; }
+  .game-frame { width: 100%; aspect-ratio: 1280 / 740; background: #333333; border-radius: 8px; overflow: hidden; margin: 4px 0 12px; }
+  .game-frame iframe { width: 100%; height: 100%; border: 0; display: block; }
   .tags { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; list-style: none; }
   .tags li { background: var(--surface); border: 1px solid var(--border); border-radius: 999px; padding: 4px 13px; font-size: 14px; }
   a { color: var(--accent); }
@@ -76,6 +78,17 @@
     <section id="projects">
       <h2>Projects</h2>
       <div class="card">
+        <h3>Narcosis</h3>
+        <p>A game built for Ludum Dare 57, a 3-day game jam, and completed in April 2025. Play it right here in the browser.</p>
+        <div class="game-frame">
+          <iframe src="https://itch.io/embed-upload/13311986?color=333333" title="Narcosis, playable game" allowfullscreen allow="fullscreen" loading="lazy">
+            <a href="https://xen3x.itch.io/narcosis">Play Narcosis on itch.io</a>
+          </iframe>
+        </div>
+        <a href="https://xen3x.itch.io/narcosis">Open on itch.io</a> &nbsp;·&nbsp;
+        <a href="https://ldjam.com/events/ludum-dare/57/narcosis">Ludum Dare submission</a>
+      </div>
+      <div class="card">
         <h3>Self-hosted home server</h3>
         <p>A CasaOS-based server running a Docker stack of media and file-sharing services, managed with Dockge and reachable remotely through Cloudflare. I debug and maintain it myself, including container, permissions, and storage issues.</p>
         <a href="https://github.com/diego2107">Code on GitHub</a>
@@ -83,7 +96,7 @@
       <div class="card">
         <h3>2D platformer game</h3>
         <p>A 2D platformer built in Godot 4, covering game architecture, player mechanics, and bug fixing.</p>
-        <a href="https://github.com/diego2107">Code on GitHub</a>
+        <a href="https://github.com/diego2107/Platformer">Code on GitHub</a>
       </div>
     </section>
 
