@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diego Taboada | Web Developer</title>
+<meta name="description" content="Portfolio of Diego Taboada, a bilingual (English/Spanish) web developer with a B.A. in Computer Science.">
+<style>
+  :root {
+    --bg: #fafaf7; --surface: #ffffff; --text: #1c2430; --muted: #5b6676;
+    --accent: #1f3a5f; --accent-text: #ffffff; --border: #dfe3e8;
+  }
+  :root:not([data-theme="light"]) { color-scheme: light dark; }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #11151b; --surface: #1a2029; --text: #e8ecf1; --muted: #98a3b3;
+      --accent: #7fb0ec; --accent-text: #0d1219; --border: #2b3340;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 22px; }
+  header.nav { padding: 22px 0; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+  header.nav .brand { font-weight: 700; color: var(--accent); text-decoration: none; }
+  header.nav nav a { color: var(--muted); text-decoration: none; margin-left: 18px; font-size: 15px; }
+  header.nav nav a:hover { color: var(--accent); }
+  .hero { padding: 56px 0 40px; }
+  .hero h1 { font-size: clamp(2rem, 6vw, 3rem); line-height: 1.15; margin: 0 0 14px; }
+  .hero p { color: var(--muted); max-width: 60ch; margin: 0 0 24px; }
+  .btn {
+    display: inline-block; padding: 11px 20px; border-radius: 8px; font-weight: 600;
+    text-decoration: none; margin: 0 10px 10px 0; border: 1px solid var(--accent);
+  }
+  .btn.primary { background: var(--accent); color: var(--accent-text); }
+  .btn.ghost { color: var(--accent); }
+  section { padding: 34px 0; border-top: 1px solid var(--border); }
+  h2 { font-size: 1.25rem; margin: 0 0 16px; color: var(--accent); }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; margin-bottom: 14px; }
+  .card h3 { margin: 0 0 6px; font-size: 1.05rem; }
+  .card p { margin: 0 0 10px; color: var(--muted); font-size: 16px; }
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 0; list-style: none; }
+  .tags li { background: var(--surface); border: 1px solid var(--border); border-radius: 999px; padding: 4px 13px; font-size: 14px; }
+  a { color: var(--accent); }
+  footer { padding: 30px 0 50px; color: var(--muted); font-size: 14px; border-top: 1px solid var(--border); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="nav">
+    <a class="brand" href="#top">Diego Taboada</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <h1>Web developer who builds for real users.</h1>
+      <p>I’m a bilingual (English/Spanish) developer with a B.A. in Computer Science from Florida International University. I build reliable, easy-to-use web experiences, and my customer-facing work has taught me what frustrates users.</p>
+      <a class="btn primary" href="resume.pdf">View résumé</a>
+      <a class="btn ghost" href="#projects">See projects</a>
+    </div>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>I work in customer support today, diagnosing technical problems and explaining fixes in plain language to non-technical people. That experience shapes how I build: clear interfaces, sensible error handling, and workflows that don’t get in the way. I work with Python, JavaScript, HTML, Java/Spring Boot, C, C#/ASP.NET, SQL, and REST APIs, and I’m looking for a web developer role where I can keep growing.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="card">
+        <h3>Self-hosted home server</h3>
+        <p>A CasaOS-based server running a Docker stack of media and file-sharing services, managed with Dockge and reachable remotely through Cloudflare. I debug and maintain it myself, including container, permissions, and storage issues.</p>
+        <a href="https://github.com/diego2107">Code on GitHub</a>
+      </div>
+      <div class="card">
+        <h3>2D platformer game</h3>
+        <p>A 2D platformer built in Godot 4, covering game architecture, player mechanics, and bug fixing.</p>
+        <a href="https://github.com/diego2107">Code on GitHub</a>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="tags">
+        <li>JavaScript</li><li>HTML</li><li>Python</li><li>Java</li><li>C</li><li>C#</li>
+        <li>.NET / ASP.NET</li><li>Spring Boot</li><li>SQL</li><li>REST APIs</li><li>Git</li>
+        <li>Agile</li><li>Test-Driven Development</li><li>Troubleshooting</li><li>English &amp; Spanish</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>The best way to reach me is by email.</p>
+      <a class="btn primary" href="mailto:diegotabo03@gmail.com">Email me</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/diegotabo/">LinkedIn</a>
+      <a class="btn ghost" href="https://github.com/diego2107">GitHub</a>
+    </section>
+  </main>
+
+  <footer>© 2026 Diego Taboada</footer>
+</div>
+</body>
+</html>
